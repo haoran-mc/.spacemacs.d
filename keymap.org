@@ -1,0 +1,38 @@
+* Spacemacs 按键绑定
+** 自带的按键绑定
+** Spacemacs 设计的按键
+*** 文件
+   - SPC p f :: 在 git 管理的文件夹下查找文件
+   - SPC f f :: 查找文件、创建新文件
+   - SPC f o :: 使用系统的外部软件打开当前文件
+   - SPC f E :: 使用 sudo 打开这个文件
+   - SPC f D :: 删除当前文件
+   - SPC f j :: 打开当前文件的 dired-mode
+   - SPC f r :: 打开 recent 文件
+   - SPC f R :: 重命名当前文件
+   - SPC f v :: 给目录添加特殊的变量
+   - SPC f y :: 复制当前文件的全路径
+   - SPC f C u/d :: 转换编码 unix/dos
+   - SPC f e d :: 打开.spacemacs 文件
+   - SPC f e i :: 打开.emacs.d/init.el 文件
+   - SPC f e l :: 打开 elpa 下面的文件
+   - SPC f c :: 复制当前文件
+   - SPC f b :: 显示当前的 bookmarks
+   - SPC f s/S :: 保存当前文件，所有 buffer 中的文件 
+*** buffer
+   - SPC b . :: hydra
+   - SPC p b :: 开启的被 git 仓库管理的 buffer 
+   - SPC b b :: 选择已开启的 buffer
+   - SPC b d :: 把这个 buffer 删除，当这个文件还是存在的
+   - SPC b i :: ibuffer
+   - SPC b h :: home
+   - SPC b k :: 通过正则表达式删除 buffer
+   - SPC b N :: 一系列添加新 buffer 的命令
+   - SPC b m :: 打开 message buffer
+   - SPC b R :: 从备份文件中还原文件
+   - SPC b s :: scratch buffer
+   - SPC b w :: toggle 文件为只读
+   - SPC b Y :: 将整个 buffer 中的内容复制
+   - SPC f P :: 将系统剪切板中的内容粘贴到 buffer 中
+   - SPC TAB :: toggle 上一个 buffer 
+** 自定义按键绑定
