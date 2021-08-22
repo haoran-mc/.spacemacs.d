@@ -405,4 +405,5 @@ Search for a search tool in the order provided by `dotspacemacs-search-tools'."
     ))
 
 (defun ogmc-misc/post-init-smartparens ()
-  (use-package smartparens))
+  (use-package smartparens)
+  )
