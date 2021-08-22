@@ -67,7 +67,13 @@ This function should only modify configuration layer settings."
      (javascript :variables javascript-backend 'lsp)
      latex
      (scheme :variables scheme-implementations '(chez))
-     ;; git
+     (git :variables
+          git-magit-status-fullscreen t
+          magit-push-always-verify nil
+          magit-save-repository-buffers 'dontask
+          magit-revert-buffers 'silent
+          magit-refs-show-commit-count 'all
+          magit-revision-show-gravatars nil)
      ;; spell-checking
      ;; lsp
      ;; version-control

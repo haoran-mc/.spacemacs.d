@@ -7,6 +7,8 @@
         ranger
         golden-ratio
         smartparens
+        ;; magit
+        ;; git-messenger
         )
       )
 
