@@ -66,6 +66,7 @@
     ))
 
 (defun ogmc-programming/post-init-web-mode ()
+  (add-to-list 'auto-mode-alist '("\\.vue\\'" . web-mode))
   (with-eval-after-load "web-mode"
     (progn
       ;; (smartparens-mode)
