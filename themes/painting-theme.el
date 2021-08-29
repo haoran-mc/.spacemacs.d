@@ -181,13 +181,15 @@ You may want to set this to window's border color.")
 
    `(tooltip                        ((t ())))
    `(dired-directory                ((t (:foreground ,blue-5))))
-   `(web-mode-html-tag-face         ((t (:foreground ,gray-4))))
-   `(web-mode-html-attr-name-face   ((t (:foreground ,gray-5))))
 
    ;; Web Mode
+   `(web-mode-comment-face          ((t (:foreground ,blue-3))))
    `(web-mode-function-call-face    ((t ())))
    `(web-mode-function-name-face    ((t ())))
    `(web-mode-html-tag-bracket-face ((t (:foreground ,gray-4))))
+   `(web-mode-html-tag-face         ((t (:foreground ,gray-4))))
+   `(web-mode-html-attr-name-face   ((t (:foreground ,gray-5))))
+   `(web-mode-block-delimiter-face  ((t (:foreground ,gray-5))))
    `(web-mode-symbol-face           ((t (:foreground ,purple-1))))
    `(css-selector                   ((t (:foreground ,purple-1))))
 
@@ -202,7 +204,6 @@ You may want to set this to window's border color.")
    `(markdown-header-face-8         ((t (:inherit outline-8 :height 1.0 :foreground "#66D9EF"))))
 
    ;; Org-mode
-   ;; `(org-table                      ((t (:foreground ,gray-2))))
    `(shadow                         ((t (:foreground ,test-comment))))
    `(org-level-1                    ((t (:inherit outline-1 :height 1.0 :weight normal :foreground ,pink-1))))
    `(org-level-2                    ((t (:inherit outline-2 :height 1.0 :weight normal :foreground ,purple-3))))
@@ -214,11 +215,8 @@ You may want to set this to window's border color.")
    `(org-level-8                    ((t (:inherit outline-8 :height 1.0 :weight normal :foreground ,white-2))))
    `(org-document-title             ((t (:inherit font-lock-string-face))))
    `(org-code                       ((t (:inherit font-lock-constant-face))))
-   ;; `(link                           ((t (:foreground ,blue-5 :underline t))))
-   ;; `(org-document-title             ((t (:foreground ,blue-5 :weight bold))))
-   ;; `(org-column-title               ((t (:foreground ,blue-5 :weight bold))))
    `(org-link                       ((t (:foreground ,blue-5 :underline t))))
-   `(org-ellipsis                   ((t (:foreground ,test-comment))))   ;; #6272a4
+   `(org-ellipsis                   ((t (:foreground ,test-comment))))
 
    ;; Treemacs
    `(treemacs-root-face             ((t (:inherit font-lock-function-name-face :height 1.4 :underline t)))))

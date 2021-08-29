@@ -10,6 +10,7 @@
 (spacemacs/set-leader-keys "otn" '(lambda() (interactive) (find-file "~/haoran/Notes/Org/Diary/wiki.org")))
 ;; dired
 (spacemacs/set-leader-keys "ode"  '(lambda() (interactive) (dired "~/.emacs.d/")))
+(spacemacs/set-leader-keys "odc"  '(lambda() (interactive) (dired "~/haoran/Code/")))
 ;; layout
 (spacemacs/set-leader-keys "oll" 'ogmc/load-my-layout)
 (spacemacs/set-leader-keys "ols" 'ogmc/save-my-layout)

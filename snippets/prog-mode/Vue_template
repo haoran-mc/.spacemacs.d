@@ -1,14 +1,24 @@
 # -*- mode: snippet -*-
-# name: Vue_template
+# name: Vue template
 # key: Vue_template
 # --
 <template>
+  <div>
+  </div>
 </template>
 
 <script>
 export default {
   name: "$1"
-};
+  data () {
+    return {
+    }
+  },
+  created () {
+  },
+  methods: {
+  }
+}
 </script>
 
 <style scoped>

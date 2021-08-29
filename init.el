@@ -40,7 +40,7 @@ This function should only modify configuration layer settings."
      ;; ----------------------------------------------------------------
      emacs-lisp
      ;; multiple-cursors
-     ;; treemacs
+     treemacs
      ;; helm
      ;; org
      ;; -----------
@@ -112,12 +112,13 @@ This function should only modify configuration layer settings."
                                     company-quickhelp  ;;好像是让代码补全窗口更好看是咋的
                                     pangu-spacing      ;;在中英文间加空格
                                     htmlize            ;;将org输出为html
-                                    ;; undo-tree          ;;代码undo
+                                    ;; undo-tree       ;;代码undo
+                                    impatient-mode     ;;在浏览器中打开html文件
                                     org-agenda
                                     spaceline          ;;美化状态栏
-                                    treemacs           ;;文件树
+                                    ;; treemacs        ;;文件树
                                     evil-cleverparens  ;;使evil在编写Lisp语言时处理括号更清晰
-                                    ;; smartparens        ;;智能括号补全
+                                    ;; smartparens     ;;智能括号补全
                                     ;; smooth-scrolling   ;;更流畅的屏幕滚动
                                     org-projectile
                                     org-brain
@@ -351,13 +352,13 @@ It should only modify the values of Spacemacs settings."
                              )
                          '(
                            painting
+                           dracula
                            material
                            chocolate
                            atom-dark
                            solarized-dark
                            spacemacs-dark
                            modus-vivendi
-                           dracula
                            moe-dark
                            test
                            ;; doom-flatwhite

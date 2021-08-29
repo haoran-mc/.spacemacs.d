@@ -69,11 +69,9 @@
   (add-to-list 'auto-mode-alist '("\\.vue\\'" . web-mode))
   (with-eval-after-load "web-mode"
     (progn
-      ;; (smartparens-mode)
       (my-web-mode-indent-setup)
       (web-mode-toggle-current-element-highlight)
       (web-mode-dom-errors-show)
-      (setq web-mode-enable-auto-pairing t)
       (setq web-mode-enable-current-element-highlight t)
       (setq web-mode-enable-css-colorization t)
       ))
