@@ -7,8 +7,8 @@
 
 (defun ogmc-org/post-init-org-superstar ()
   (progn
-    ;; (setq org-superstar-headline-bullets-list '("☰" "☷" "☯" "☭"))
-    ;; (setq org-ellipsis "..")
+    (setq org-superstar-headline-bullets-list '("◉" "○" "✸" "■" "◆" "▲" "▶"))
+    ;; (setq org-superstar-bullet-list '("☰" "☷" "■" "◆" "▲" "▶"))
     (setq org-ellipsis " ▼ ")
     ))
 
@@ -30,5 +30,8 @@
       ;; (setq org-startup-folded t)
       (setq org-startup-folded 'content);; 只显示标题
       (setq org-html-head
-            "<link rel=\"stylesheet\" href=\"./static/css/org.css\">")
+            "<link rel=\"stylesheet\" href=\"./static/css/org.css\">"
+            ;; "<link rel=\"stylesheet\" href=\"./static/css/vast.css\">"
+            )
+      (setq org-export-with-sub-superscripts nil)
       )))

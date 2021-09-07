@@ -10,6 +10,7 @@
         ;; emmet-mode
         ;; auto-complete
         ;; lsp-mode
+        go-mode
         ))
 
 (defun ogmc-programming/post-init-flycheck ()
@@ -120,3 +121,5 @@
   (add-to-list 'auto-mode-alist '("\\.fire\\'" . json-mode))
   (add-to-list 'auto-mode-alist '("\\.fire.meta\\'" . json-mode))
   )
+
+(defun ogmc-programming/post-init-go-mode ())
