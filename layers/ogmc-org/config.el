@@ -21,15 +21,25 @@
 ;;; Commentary:
 ;;; Code:
 
+(progn
+  "Settings of `org-export'."
+  (setq org-export-in-background t
+        ;; Hide html built-in style and script.
+        org-html-htmlize-output-type 'inline-css
+        org-html-head-include-default-style nil
+        org-html-head-include-scripts nil
+        ))
+
 (custom-set-faces
- '(org-level-1 ((t (:inherit outline-1 :height 1.0)))) 
- '(org-level-2 ((t (:inherit outline-2 :height 1.0)))) 
- '(org-level-3 ((t (:inherit outline-3 :height 1.0)))) 
- '(org-level-4 ((t (:inherit outline-4 :height 1.0)))) 
- '(org-level-5 ((t (:inherit outline-5 :height 1.0)))) 
- '(org-level-6 ((t (:inherit outline-6 :height 1.0)))) 
- '(org-level-7 ((t (:inherit outline-7 :height 1.0)))) 
+ '(org-level-1 ((t (:inherit outline-1 :height 1.0))))
+ '(org-level-2 ((t (:inherit outline-2 :height 1.0))))
+ '(org-level-3 ((t (:inherit outline-3 :height 1.0))))
+ '(org-level-4 ((t (:inherit outline-4 :height 1.0))))
+ '(org-level-5 ((t (:inherit outline-5 :height 1.0))))
+ '(org-level-6 ((t (:inherit outline-6 :height 1.0))))
+ '(org-level-7 ((t (:inherit outline-7 :height 1.0))))
  '(org-level-8 ((t (:inherit outline-8 :height 1.0)))))
+
 
 
 (provide 'config)

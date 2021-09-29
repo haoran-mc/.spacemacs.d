@@ -4,10 +4,20 @@
 (spacemacs/set-leader-keys "oy" 'youdao-dictionary-search-at-point+)
 ;; open fire
 (spacemacs/set-leader-keys "rc" '(lambda() (interactive) (dired "~/.spacemacs.d/")))
-(spacemacs/set-leader-keys "tw" '(lambda() (interactive) (find-file "~/haoran/Notes/Org/Programming/+wiki-list.org")))
+(spacemacs/set-leader-keys "tw" '(lambda() (interactive) (find-file "~/haoran/Notes/Org/Programming/org/wikiindex.org")))
+(spacemacs/set-leader-keys "oi" '(lambda() (interactive) (find-file "~/haoran/Notes/Org/Programming/org/index.org")))
 (spacemacs/set-leader-keys "oT"  '(lambda() (interactive) (dired "~/haoran/Notes/Markdown/")))
 (spacemacs/set-leader-keys "oo"  'ogmc/open-in-browser)
 (spacemacs/set-leader-keys "otn" '(lambda() (interactive) (find-file "~/haoran/Notes/Org/Diary/wiki.org")))
+
+(spacemacs/set-leader-keys "obb" 'ogmc/preview-current-buffer-in-browser)
+(spacemacs/set-leader-keys "obf" 'ogmc/save-and-publish-file)
+(spacemacs/set-leader-keys "obw" 'save-and-publish-website)
+(spacemacs/set-leader-keys "obs" 'save-and-publish-statics)
+(spacemacs/set-leader-keys "obS" 'save-and-publish-rstatics)
+(spacemacs/set-leader-keys "obd" 'delete-org-and-html)
+(spacemacs/set-leader-keys "obD" 'just-delete-relative-html)
+
 ;; dired
 (spacemacs/set-leader-keys "ode"  '(lambda() (interactive) (dired "~/.emacs.d/")))
 (spacemacs/set-leader-keys "odc"  '(lambda() (interactive) (dired "~/haoran/Code/")))
