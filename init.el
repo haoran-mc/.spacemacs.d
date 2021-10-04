@@ -340,34 +340,35 @@ It should only modify the values of Spacemacs settings."
    ;; with 2 themes variants, one dark and one light)
    dotspacemacs-themes (if (not window-system)
                            '(
-                             dracula
                              painting
-                             material
-                             moe-dark
+                             dracula
+                             modus-operandi
+                             spacemacs-light
                              solarized
+                             moe-dark
+                             material
                              chocolate
                              spacemacs-dark
                              atom-dark
                              modus-vivendi
-                             modus-operandi
-                             spacemacs-light
                              )
                          '(
                            painting
+                           modus-vivendi
+                           chocolate
+                           modus-operandi
                            dracula
                            material
-                           chocolate
                            atom-dark
                            solarized-dark
                            spacemacs-dark
-                           modus-vivendi
                            moe-dark
                            test
                            ;; doom-flatwhite
                            ;; doom-city-lights
                            ;; doom-fairy-floss
-                           modus-operandi
-                           spacemacs-light))
+                           spacemacs-light
+													 ))
 
    ;; Set the theme for the Spaceline. Supported themes are `spacemacs',
    ;; `all-the-icons', `custom', `doom', `vim-powerline' and `vanilla'. The

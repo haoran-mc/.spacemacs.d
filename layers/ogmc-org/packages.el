@@ -2,7 +2,7 @@
   '(
     (org :location built-in)
     org-superstar   ;;org-bullet的后代
-    ;; htmliza
+    ;; htmlize
     simple-httpd
     )
   )
@@ -31,8 +31,9 @@
       (setq org-M-RET-may-split-line '((header-line . nil)));;M-RET不分割
       ;; (setq org-startup-folded t)
       (setq org-startup-folded 'content);; 只显示标题
+			(setq org-hide-block-startup t)
       ;; (setq org-html-head "<link rel=\"stylesheet\" href=\"./static/css/org.css\">")
-      (setq org-export-with-sub-superscripts nil)
+      ;; (setq org-export-with-sub-superscripts nil)
       ;; site
       (require 'ox-publish)
       (setq org-publish-project-alist
@@ -46,24 +47,28 @@
                :publishing-function org-html-publish-to-html ;; Publishing action
                :html-head-include-default-style nil ;; org-html-head-include-default-style
                :html-head-include-scripts nil       ;; org-html-head-include-scripts
+							 :with-sub-superscript {}             ;; 禁用 _ 转义成下标，^转义成上标。但加 {} 就可以转义了
+							 :preserve-breaks t                   ;; 是否保留换行符。如果设置为 nil，导出后就会多行文本显示在一行
                ;; ; Generic properties
+							 :author "haoran"
+							 :email "haoran.mc@outlook.com"
                :html-doctype "html5" ;; org-html-doctype
                :headline-levels 6    ;; org-export-headline-levels
                :language "zh"        ;; org-export-default-language
                :html-checkbox-type unicode  ;; org-html-checkbox-type
-               ;; :section-numbers nil  ;; org-export-with-section-numbers
+               :section-numbers nil  ;; org-export-with-section-numbers
+               :with-toc t           ;; org-export-with-toc
+               ;; :html-metadata-timestamp-format "%Y-%m-%d" ;; org-html-metadata-timestamp-format
+							 ;; :exclude "test*\\|.*\.test\.org\\|wikiindex.org"      ;; test 为前缀的文件和文件夹都不导出 html
                ;; :with-planning t      ;; org-export-with-planning
                ;; :with-priority t      ;; org-export-with-priority
                ;; :with-tags not-in-toc ;; org-export-with-tags
-               ;; :with-toc nil           ;; org-export-with-toc
-               ;; :html-metadata-timestamp-format "%Y-%m-%d" ;; org-html-metadata-timestamp-format
                :html-head
                "
                 <link rel=\"stylesheet\" href=\"static/css/org.css\" type=\"text/css\"  />
                 <script type=\"module\" src=\"static/js/main.js\" defer></script>
                 <link rel=\"shortcut icon\" href=\"images/favicon.ico\" type=\"image/x-icon\" />
                "
-               ;; <script type=\"text/javascript\" src=\"https://cdn.jsdelivr.net/npm/valine@1.4.14/dist/Valine.min.js\"></script>
                )
 							;; ("org-static"
 							;;  :base-directory "~/haoran/Notes/Org/Programming/public/static"
@@ -82,3 +87,8 @@
 
 (defun ogmc-org/init-simple-httpd ()
   (setq httpd-root "~/haoran/Notes/Org/Programming/public"))
+
+
+;; (defun ogmc-org/post-init-htmlize ()
+;; 	(setq org-export-in-background nil
+;; 				org-html-htmlize-output-type 'inline-css))

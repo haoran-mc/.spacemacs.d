@@ -15,8 +15,8 @@
 (spacemacs/set-leader-keys "obw" 'save-and-publish-website)
 (spacemacs/set-leader-keys "obs" 'save-and-publish-statics)
 (spacemacs/set-leader-keys "obS" 'save-and-publish-rstatics)
-(spacemacs/set-leader-keys "obd" 'delete-org-and-html)
-(spacemacs/set-leader-keys "obD" 'just-delete-relative-html)
+(spacemacs/set-leader-keys "obD" 'delete-org-and-html)
+(spacemacs/set-leader-keys "obd" 'just-delete-relative-html)
 
 ;; dired
 (spacemacs/set-leader-keys "ode"  '(lambda() (interactive) (dired "~/.emacs.d/")))

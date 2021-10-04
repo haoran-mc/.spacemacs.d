@@ -94,5 +94,7 @@ Which is a reverse operation of `save-and-publish-statics'."
     (unless (httpd-running-p) (httpd-start))
     (browse-url fileurl)))
 
+
 (provide 'funcs)
 ;;; funcs.el ends here
+

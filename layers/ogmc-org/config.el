@@ -23,11 +23,10 @@
 
 (progn
   "Settings of `org-export'."
-  (setq org-export-in-background t
+  (setq
+	 ;; org-export-in-background t
         ;; Hide html built-in style and script.
         org-html-htmlize-output-type 'inline-css
-        org-html-head-include-default-style nil
-        org-html-head-include-scripts nil
         ))
 
 (custom-set-faces
@@ -40,7 +39,8 @@
  '(org-level-7 ((t (:inherit outline-7 :height 1.0))))
  '(org-level-8 ((t (:inherit outline-8 :height 1.0)))))
 
-
+;; (require 'htmlize)
+(load-file "~/.spacemacs.d/htmlize.el")
 
 (provide 'config)
 ;;; config.el ends here
