@@ -3,9 +3,9 @@
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
- '(evil-want-Y-yank-to-eol nil)
- '(package-selected-packages
-	 '(modus-operandi-theme youdao-dictionary yasnippet-snippets yapfify writeroom-mode winum which-key wgrep web-mode web-beautify uuidgen use-package unfill undo-tree treemacs-projectile treemacs-persp treemacs-icons-dired treemacs-evil toc-org tagedit symbol-overlay string-inflection string-edit sphinx-doc spaceline-all-the-icons solarized-theme smex smartparens slim-mode simple-httpd scss-mode sass-mode restart-emacs request ranger quickrun pytest pyenv-mode py-isort pug-mode prettier-js popwin poetry pippel pipenv pip-requirements pcre2el paradox overseer org-superstar open-junk-file npm-mode nose nodejs-repl nameless mwim multi-line moe-theme modus-vivendi-theme mmm-mode material-theme markdown-toc macrostep lsp-ui lsp-treemacs lsp-python-ms lsp-pyright lsp-origami lsp-latex lsp-ivy live-py-mode json-navigator json-mode js2-refactor js-doc ivy-yasnippet ivy-xref ivy-purpose ivy-hydra ivy-avy indent-guide importmagic ibuffer-projectile hybrid-mode hungry-delete hl-todo highlight-parentheses highlight-numbers helm-ag golden-ratio godoctor go-tag go-rename go-impl go-guru go-gen-test go-fill-struct go-eldoc geiser-chez fuzzy font-lock+ flycheck-pos-tip flycheck-package flycheck-elsa flx find-by-pinyin-dired expand-region evil-visualstar evil-visual-mark-mode evil-tutor evil-textobj-line evil-surround evil-numbers evil-nerd-commenter evil-matchit evil-lion evil-iedit-state evil-goggles evil-collection eval-sexp-fu emr emmet-mode elisp-slime-nav editorconfig dumb-jump dracula-theme dotenv-mode diminish cython-mode counsel-projectile counsel-css company-web company-statistics company-reftex company-math company-go company-auctex company-anaconda column-enforce-mode chocolate-theme centered-cursor-mode blacken bind-map auto-yasnippet auto-highlight-symbol auto-compile auctex-latexmk atom-dark-theme aggressive-indent)))
+ '(custom-safe-themes
+	 '("b4496c5018a95b21b2d0fdef116a1dc1c1df424e2084047cf1cc7418a09fdd06" default))
+ '(evil-want-Y-yank-to-eol nil))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.

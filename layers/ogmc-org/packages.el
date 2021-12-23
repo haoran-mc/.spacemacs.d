@@ -29,9 +29,10 @@
       (spacemacs|disable-company org-mode);; 不允许自动补全
       (add-hook 'org-mode-hook 'toggle-truncate-lines) ;;自动换行
       (setq org-M-RET-may-split-line '((header-line . nil)));;M-RET不分割
-      ;; (setq org-startup-folded t)
+			(setq org-cycle-include-plain-lists 'integrate)
+      (setq org-startup-folded t)
       (setq org-startup-folded 'content);; 只显示标题
-			(setq org-hide-block-startup t)
+			;; (setq org-hide-block-startup t)
       ;; (setq org-html-head "<link rel=\"stylesheet\" href=\"./static/css/org.css\">")
       ;; (setq org-export-with-sub-superscripts nil)
       ;; site
@@ -42,7 +43,8 @@
                :base-directory "~/haoran/Notes/Org/Programming/org"
                :base-extension "org"
                :publishing-directory "~/haoran/Notes/Org/Programming/public"
-               :exclude "^_[[:word:]-]*.org"
+               ;; :exclude "^_[[:word:]-]*.org"
+							 :exclude "wiki*\.org|Diary\.org|Book\.org|Film\.org|Note\.org"
                :recursive t
                :publishing-function org-html-publish-to-html ;; Publishing action
                :html-head-include-default-style nil ;; org-html-head-include-default-style
@@ -59,7 +61,6 @@
                :section-numbers nil  ;; org-export-with-section-numbers
                :with-toc t           ;; org-export-with-toc
                ;; :html-metadata-timestamp-format "%Y-%m-%d" ;; org-html-metadata-timestamp-format
-							 ;; :exclude "test*\\|.*\.test\.org\\|wikiindex.org"      ;; test 为前缀的文件和文件夹都不导出 html
                ;; :with-planning t      ;; org-export-with-planning
                ;; :with-priority t      ;; org-export-with-priority
                ;; :with-tags not-in-toc ;; org-export-with-tags
@@ -78,6 +79,7 @@
 							;;  :publishing-function org-publish-attachment
 							;;  )
 							;; ("org" :components ("org-notes" "org-static"))
+							;; <script src=\"https://sdk.jinrishici.com/v2/browser/jinrishici.js\" charset=\"utf-8\"></script>
 							))
 			(let ((fileurl (concat "~/haoran/Notes/Org/Programming/public/" (file-name-base (buffer-name)) ".html")))
 				(if (file-exists-p fileurl)

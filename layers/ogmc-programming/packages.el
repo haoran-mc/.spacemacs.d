@@ -7,7 +7,7 @@
         yasnippet
         auto-yasnippet
         json-mode
-        ;; emmet-mode
+        emmet-mode
         ;; auto-complete
         ;; lsp-mode
         go-mode

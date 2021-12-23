@@ -25,9 +25,9 @@
   "Settings of `org-export'."
   (setq
 	 ;; org-export-in-background t
-        ;; Hide html built-in style and script.
-        org-html-htmlize-output-type 'inline-css
-        ))
+   ;; Hide html built-in style and script.
+   org-html-htmlize-output-type 'inline-css
+   ))
 
 (custom-set-faces
  '(org-level-1 ((t (:inherit outline-1 :height 1.0))))
@@ -41,6 +41,13 @@
 
 ;; (require 'htmlize)
 (load-file "~/.spacemacs.d/htmlize.el")
+
+(setq system-time-locale "C")
+
+(setq httpd-port 9031)
+
+;; (add-to-list 'org-modules 'org-tempo)
+;; (defvar org-modules '(org-tempo))
 
 (provide 'config)
 ;;; config.el ends here

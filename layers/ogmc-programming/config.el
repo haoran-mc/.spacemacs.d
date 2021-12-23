@@ -8,6 +8,11 @@
 
 (add-to-list 'auto-mode-alist '("\\.wxss\\'" . css-mode))
 (setq default-tab-width 4)
-(setq-default indent-tabs-mode nil)
+(setq-default indent-tabs-mode t)
 (setq c-default-style "linux")
 (setq c-basic-offset 4)
+
+(add-hook 'go-mode-hook
+          (lambda ()
+            (setq indent-tabs-mode t)
+            (setq tab-width 4)))

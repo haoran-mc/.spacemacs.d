@@ -89,7 +89,7 @@ Which is a reverse operation of `save-and-publish-statics'."
 (defun ogmc/preview-current-buffer-in-browser ()
   "Open current buffer as html."
   (interactive)
-  (let ((fileurl (concat "http://127.0.0.1:8080/" (file-name-base (buffer-name)) ".html")))
+  (let ((fileurl (concat "http://127.0.0.1:9031/" (file-name-base (buffer-name)) ".html")))
     (ogmc/save-and-publish-file)
     (unless (httpd-running-p) (httpd-start))
     (browse-url fileurl)))
