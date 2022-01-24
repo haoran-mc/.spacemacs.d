@@ -334,24 +334,36 @@ It should only modify the values of Spacemacs settings."
 
    ;; Initial message in the scratch buffer, such as "Welcome to Spacemacs!"
    ;; (default nil)
-   dotspacemacs-initial-scratch-message ""
+   dotspacemacs-initial-scratch-message "+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++++++++++++++++++       +++++++   +++++++++   +++             ++++++++          +++++   +++             ++++++       ++++++            ++++++++++++
+++++++++++++++             ++++     +++++++   +++             ++++++++            +++   +++             +++             +++            ++++++++++++
++++++++++++++     +++++     +++      ++++++   +++   ++++++++++++++++++   +++++     ++   +++   ++++++++++++     +++++     ++   +++++++++++++++++++++
+++++++++++++    +++++++++    ++        ++++   +++   ++++++++++++++++++   +++++++   ++   +++   +++++++++++    +++++++++   ++   +++++++++++++++++++++
+++++++++++++   +++++++++++   ++   ++    +++   +++            +++++++++   ++++      ++   +++            ++   +++++++++++++++            ++++++++++++
+++++++++++++   +++++++++++   ++   +++     +   +++   .........+++++++++            +++   +++   .........++    ++++++++++++++   .........++++++++++++
+++++++++++++    +++++++++    ++   +++++       +++   ++++++++++++++++++   ++++++++++++   +++   ++++++++++++    +++++++    ++   +++++++++++++++++++++
++++++++++++++     +++++     +++   +++++++     +++             ++++++++   ++++++++++++   +++             +++              ++            ++++++++++++
++++++++++++++++           +++++   ++++++++    +++             ++++++++   ++++++++++++   +++             ++++           ++++            ++++++++++++
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+"
 
    ;; List of themes, the first of the list is loaded when spacemacs starts.
    ;; Press `SPC T n' to cycle to the next theme in the list (works great
    ;; with 2 themes variants, one dark and one light)
    dotspacemacs-themes (if (not window-system)
                            '(
-                             painting
-                             dracula
-                             modus-operandi
-                             spacemacs-light
-                             solarized
-                             moe-dark
-                             material
-                             chocolate
                              spacemacs-dark
                              atom-dark
+                             solarized
+                             material
                              modus-vivendi
+                             modus-operandi
+                             dracula
+                             painting
+                             spacemacs-light
+                             moe-dark
                              )
                          '(
                            painting
@@ -696,7 +708,7 @@ before packages are loaded."
   (smartparens-global-mode t)
   )
 
-(if (not window-system)
+(if window-system
     (load-file "~/.spacemacs.d/dashboard.el")
   (progn
     (defun spacemacs-buffer/goto-buffer (&optional refresh))

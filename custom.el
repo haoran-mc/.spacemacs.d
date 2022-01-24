@@ -4,7 +4,7 @@
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
  '(custom-safe-themes
-	 '("b4496c5018a95b21b2d0fdef116a1dc1c1df424e2084047cf1cc7418a09fdd06" default))
+	 '("b4496c5018a95b21b2d0fdef116a1dc1c1df424e2084047cf1cc7418a09fdd06" "75a8194e6aa3ef759e8512fb6149137e2ada5947a7424e4278c395e374835afe" default))
  '(evil-want-Y-yank-to-eol nil))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
