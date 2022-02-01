@@ -1,12 +1,12 @@
 (setq ogmc-programming-packages
       '(
-        js2-mode
-        web-mode
-        flycheck
+        ;; js2-mode
+        ;; web-mode
+        ;; flycheck
         company
         yasnippet
         auto-yasnippet
-        ;; json-mode
+        json-mode
         ;; emmet-mode
         ;; auto-complete
         ;; lsp-mode

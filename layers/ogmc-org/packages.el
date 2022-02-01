@@ -1,7 +1,7 @@
 (defconst ogmc-org-packages
   '(
     (org :location built-in)
-    org-superstar   ;;org-bullet的后代
+    org-superstar   ;; org-bullet的后代
     ;; htmlize
     simple-httpd
     )

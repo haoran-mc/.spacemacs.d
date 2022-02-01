@@ -3,9 +3,9 @@
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
- '(custom-safe-themes
-	 '("b4496c5018a95b21b2d0fdef116a1dc1c1df424e2084047cf1cc7418a09fdd06" "75a8194e6aa3ef759e8512fb6149137e2ada5947a7424e4278c395e374835afe" default))
- '(evil-want-Y-yank-to-eol nil))
+ '(evil-want-Y-yank-to-eol nil)
+ '(package-selected-packages
+	 '(json-reformat json-navigator hierarchy json-mode json-snatcher youdao-dictionary yasnippet-snippets yaml-mode writeroom-mode winum which-key wgrep web-mode web-beautify uuidgen use-package unfill undo-tree treemacs-projectile treemacs-persp treemacs-icons-dired treemacs-evil toc-org tagedit symbol-overlay string-inflection string-edit spaceline-all-the-icons solarized-theme smex smartparens slim-mode simple-httpd scss-mode sass-mode restart-emacs request ranger quickrun pug-mode prettier-js popwin pcre2el paradox overseer org-superstar open-junk-file nameless mwim multi-line moe-theme modus-vivendi-theme modus-operandi-theme mmm-mode material-theme markdown-toc macrostep ivy-yasnippet ivy-xref ivy-purpose ivy-hydra ivy-avy indent-guide ibuffer-projectile hybrid-mode hungry-delete hl-todo highlight-parentheses highlight-numbers helm-ag golden-ratio godoctor go-tag go-rename go-impl go-guru go-gen-test go-fill-struct go-eldoc geiser-chez fuzzy font-lock+ flycheck-pos-tip flycheck-package flycheck-elsa flx find-by-pinyin-dired expand-region evil-visualstar evil-visual-mark-mode evil-tutor evil-textobj-line evil-surround evil-numbers evil-nerd-commenter evil-matchit evil-lion evil-iedit-state evil-goggles evil-collection eval-sexp-fu emr emmet-mode elisp-slime-nav editorconfig dumb-jump dracula-theme dotenv-mode diminish counsel-projectile counsel-css company-web company-statistics company-go column-enforce-mode centered-cursor-mode bind-map auto-yasnippet auto-highlight-symbol auto-compile atom-dark-theme aggressive-indent)))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.

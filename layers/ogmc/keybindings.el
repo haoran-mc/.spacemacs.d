@@ -29,5 +29,5 @@
 
 ;; highlight
 (spacemacs/set-leader-keys "hh" 'ogmc/highlight-dwim)
-(spacemacs/set-leader-keys "hc" 'ogmc/clearn-highlight)
+(spacemacs/set-leader-keys "hc" 'ogmc/clean-highlight)
 

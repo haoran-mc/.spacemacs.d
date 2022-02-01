@@ -6,7 +6,7 @@
         (deactivate-mark))
     (spacemacs/symbol-overlay)))
 
-(defun ogmc/clearn-highlight ()
+(defun ogmc/clean-highlight ()
   (interactive)
   (symbol-overlay-remove-all))
 
