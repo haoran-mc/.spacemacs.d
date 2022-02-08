@@ -3,12 +3,13 @@
 
 (spacemacs/set-leader-keys "oy" 'youdao-dictionary-search-at-point+)
 ;; open fire
-(spacemacs/set-leader-keys "rc" '(lambda() (interactive) (dired "~/.spacemacs.d/")))
-(spacemacs/set-leader-keys "tw" '(lambda() (interactive) (find-file "~/haoran/Notes/Org/Programming/org/wikiindex.org")))
-(spacemacs/set-leader-keys "oi" '(lambda() (interactive) (find-file "~/haoran/Notes/Org/Programming/org/index.org")))
-(spacemacs/set-leader-keys "oT"  '(lambda() (interactive) (dired "~/haoran/Notes/Markdown/")))
+(spacemacs/set-leader-keys "rc"  '(lambda() (interactive) (dired "~/.spacemacs.d/")))
+(spacemacs/set-leader-keys "tw"  '(lambda() (interactive) (find-file "~/haoran/Notes/Org/Programming/org/wikiindex.org")))
 (spacemacs/set-leader-keys "oo"  'ogmc/open-in-browser)
-(spacemacs/set-leader-keys "otn" '(lambda() (interactive) (find-file "~/haoran/Notes/Org/Diary/wiki.org")))
+(spacemacs/set-leader-keys "oi"  'ogmc/find-file-Wiki)
+(spacemacs/set-leader-keys "onT" 'ogmc/dired-Markdown)
+(spacemacs/set-leader-keys "ond" 'ogmc/find-file-Diary)
+(spacemacs/set-leader-keys "onn" 'ogmc/find-file-Navigation)
 
 (spacemacs/set-leader-keys "obb" 'ogmc/preview-current-buffer-in-browser)
 (spacemacs/set-leader-keys "obf" 'ogmc/save-and-publish-file)
