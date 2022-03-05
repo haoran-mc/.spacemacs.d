@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: insert photo
+# key: insert_photo
+# --
+
+#+begin_export html
+<img src="./images/$1" />
+#+end_export

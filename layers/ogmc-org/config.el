@@ -44,7 +44,21 @@
 
 (setq system-time-locale "C")
 
-(setq httpd-port 9031)
+(setq httpd-port 9517)
+
+(setq org-html-mathjax-options
+			'((path "static/MathJax/cdn.bootcdn.net/ajax/libs/mathjax/3.1.2/es5/tex-mml-chtml.min.js")
+				;; '((path "static/MathJax/cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML")
+				;; '((path "https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML")
+				(scale "100")
+				(align "center")
+				(font "TeX")
+				(linebreaks "false")
+				(autonumber "AMS")
+				(indent "0em")
+				(multlinewidth "85%")
+				(tagindent ".8em")
+				(tagside "right")))
 
 ;; (add-to-list 'org-modules 'org-tempo)
 ;; (defvar org-modules '(org-tempo))

@@ -20,22 +20,22 @@
     (progn
       (require 'org)
       (require 'org-tempo);;添加这一句之后就可以<s<TAB>了
-      (setq org-link-frame-setup ;;打开链接全屏，不然就会分屏打开
+      (setq org-link-frame-setup;;打开链接全屏，不然就会分屏打开
             '((vm . vm-visit-folder)
               (vm-imap . vm-visit-imap-folder)
               (gnus . gnus)
               (file . find-file)
               (wl . wl-frame)))
-      (spacemacs|disable-company org-mode);; 不允许自动补全
-      (add-hook 'org-mode-hook 'toggle-truncate-lines) ;;自动换行
+      (spacemacs|disable-company org-mode);;不允许自动补全
+      (add-hook 'org-mode-hook 'toggle-truncate-lines);;自动换行
       (setq org-M-RET-may-split-line '((header-line . nil)));;M-RET不分割
 			(setq org-cycle-include-plain-lists 'integrate)
       (setq org-startup-folded t)
       (setq org-startup-folded 'content);; 只显示标题
-			;; (setq org-hide-block-startup t)
+			;; (setq org-todo-keywords
+			;; 			'((sequence "TODO" "|" "DONE")))
+			(setq org-hide-block-startup t)
       ;; (setq org-html-head "<link rel=\"stylesheet\" href=\"./static/css/org.css\">")
-      ;; (setq org-export-with-sub-superscripts nil)
-      ;; site
       (require 'ox-publish)
       (setq org-publish-project-alist
             '(("org-notes"

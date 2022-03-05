@@ -67,9 +67,9 @@ This function should only modify configuration layer settings."
      (chinese :variables chinese-enable-youdao-dict t)
      spacemacs-editing
      html
-     ;; (javascript :variables javascript-backend 'lsp)
+     (javascript :variables javascript-backend 'lsp)
      ;; latex
-     (scheme :variables scheme-implementations '(chez))
+     (scheme :variables scheme-implementations '(mit guile chez))
      ;; (git :variables
      ;;      git-magit-status-fullscreen t
      ;;      magit-push-always-verify nil
@@ -120,10 +120,16 @@ This function should only modify configuration layer settings."
                                     impatient-mode     ;;在浏览器中打开html文件
                                     org-agenda
                                     spaceline          ;;美化状态栏
-                                    ;; treemacs        ;;文件树
+                                    treemacs           ;;文件树
                                     evil-cleverparens  ;;使evil在编写Lisp语言时处理括号更清晰
-                                    ;; smartparens     ;;智能括号补全
+                                    ;; smartparens        ;;智能括号补全
                                     ;; smooth-scrolling   ;;更流畅的屏幕滚动
+                                    clang-format       ;;C语言格式化
+																		sass-mode          ;;sass
+																		scss-mode          ;;scss
+																		less-css-mode      ;;less-css-mode
+																		pug-mode           ;;pug-mode
+																		haml-mode          ;;haml-mode
                                     org-projectile
                                     org-brain
                                     magit-gh-pulls
@@ -158,9 +164,8 @@ This function should only modify configuration layer settings."
                                     lorem-ipsum
                                     symon
                                     ac-ispell
-                                    auto-complete
+                                    ;; auto-complete
                                     auto-dictionary
-                                    clang-format
                                     define-word
                                     google-translate
                                     disaster
@@ -356,20 +361,26 @@ It should only modify the values of Spacemacs settings."
    dotspacemacs-themes (if (not window-system)
                            '(
                              spacemacs-dark
-                             atom-dark
                              solarized
-                             material
+                             painting
+                             moe-dark
+														 chocolate
                              modus-vivendi
                              modus-operandi
                              dracula
-                             painting
+                             material
+                             atom-dark
+														 solarized-dark
+														 test
                              spacemacs-light
-                             moe-dark
                              )
                          '(
                            painting
-                           modus-vivendi
+                           solarized
+                           moe-dark
+                           painting
                            chocolate
+                           modus-vivendi
                            modus-operandi
                            dracula
                            material
@@ -400,6 +411,7 @@ It should only modify the values of Spacemacs settings."
    ;; Default font or prioritized list of fonts. The `:size' can be specified as
    ;; a non-negative integer (pixel size), or a floating-point (point size).
    ;; Point size is recommended, because it's device independent. (default 10.0)
+
    dotspacemacs-default-font '("Source Code Pro"
                                :size 10.0
                                :weight normal
@@ -706,7 +718,7 @@ Put your configuration code here, except for variables that should be set
 before packages are loaded."
   (setq scroll-margin 5 scroll-consrvatively 10000)
   (global-hungry-delete-mode t)
-  (smartparens-global-mode t)
+  ;; (smartparens-global-mode t)
 	)
 
 (if window-system

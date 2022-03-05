@@ -7,6 +7,7 @@
         yasnippet
         auto-yasnippet
         json-mode
+				;; geiser-chez
         ;; emmet-mode
         ;; auto-complete
         ;; lsp-mode

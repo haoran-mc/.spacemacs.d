@@ -21,7 +21,7 @@
     (setq interprogram-cut-function 'xsel-cut-function)
     (setq interprogram-paste-function 'xsel-paste-function)))
 
-(if window-system
-    (dolist (charset '(kana han cjk-misc bopomofo))
-      (set-fontset-font (frame-parameter nil 'font) charset
-                        (font-spec :family "Microsoft YaHei" :size 12))))
+;; (if window-system
+;;     (dolist (charset '(kana han cjk-misc bopomofo))
+;;       (set-fontset-font (frame-parameter nil 'font) charset
+;;                         (font-spec :family "Microsoft YaHei" :size 12))))

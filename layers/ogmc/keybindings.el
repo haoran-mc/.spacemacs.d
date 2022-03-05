@@ -7,8 +7,11 @@
 (spacemacs/set-leader-keys "tw"  '(lambda() (interactive) (find-file "~/haoran/Notes/Org/Programming/org/wikiindex.org")))
 (spacemacs/set-leader-keys "oo"  'ogmc/open-in-browser)
 (spacemacs/set-leader-keys "oi"  'ogmc/find-file-Wiki)
+(spacemacs/set-leader-keys "oni" 'ogmc/find-file-Interview)
+(spacemacs/set-leader-keys "ons" 'ogmc/find-file-SICP)
 (spacemacs/set-leader-keys "onT" 'ogmc/dired-Markdown)
 (spacemacs/set-leader-keys "ond" 'ogmc/find-file-Diary)
+(spacemacs/set-leader-keys "onb" 'ogmc/find-file-Backup)
 (spacemacs/set-leader-keys "onn" 'ogmc/find-file-Navigation)
 
 (spacemacs/set-leader-keys "obb" 'ogmc/preview-current-buffer-in-browser)

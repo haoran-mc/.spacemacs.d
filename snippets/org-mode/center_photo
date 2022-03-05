@@ -1,0 +1,10 @@
+# -*- mode: snippet -*-
+# name: center photo
+# key: center_photo
+# --
+
+#+begin_export html
+<div class="div-center">
+		 <img src="./images/$1" width="620px" />
+</div>
+#+end_export
