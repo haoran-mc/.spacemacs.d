@@ -43,7 +43,7 @@ This function should only modify configuration layer settings."
      ;; ----------------------------------------------------------------
      emacs-lisp
      ;; multiple-cursors
-     treemacs
+     ;; treemacs
      ;; helm
      ;; org
      ;; -----------
@@ -122,6 +122,10 @@ This function should only modify configuration layer settings."
                                     spaceline          ;;美化状态栏
                                     treemacs           ;;文件树
                                     evil-cleverparens  ;;使evil在编写Lisp语言时处理括号更清晰
+                                    pyim
+																		pyim-basedict
+																		flyspell
+																		spell-checking
                                     ;; smartparens        ;;智能括号补全
                                     ;; smooth-scrolling   ;;更流畅的屏幕滚动
                                     clang-format       ;;C语言格式化
@@ -190,7 +194,6 @@ This function should only modify configuration layer settings."
                                     flx-ido
                                     ivy-rich
                                     helm-purpose
-                                    pyim
                                     )
 
    ;; Defines the behaviour of Spacemacs when installing packages.
@@ -725,7 +728,7 @@ before packages are loaded."
     (load-file "~/.spacemacs.d/dashboard.el")
   (progn
     (defun spacemacs-buffer/goto-buffer (&optional refresh))
-    ;; (defun spacemacs-buffer/display-startup-note ())
+    (defun spacemacs-buffer/display-startup-note ())
     (defun spacemacs-buffer//startup-hook ())))
 
 (setq custom-file (expand-file-name "custom.el" dotspacemacs-directory))

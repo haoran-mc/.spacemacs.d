@@ -1,7 +1,7 @@
 (setq ogmc-misc-packages
       '(
         helm
-        helm-ag
+        ;; helm-ag
         evil
         markdown-mode
         ranger
