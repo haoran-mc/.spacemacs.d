@@ -42,6 +42,10 @@
 	(interactive)
 	(find-file "~/haoran/Notes/Org/Diary/wiki.org"))
 
+(defun ogmc/find-file-WikiIndex()
+	(interactive)
+	(find-file "~/haoran/Notes/Org/Programming/org/wikiindex.org"))
+
 (defun ogmc/find-file-Backup()
 	(interactive)
 	(find-file "~/haoran/Notes/Org/Diary/Backup.org"))
@@ -65,3 +69,7 @@
 (defun ogmc/find-file-SICP()
 	(interactive)
 	(find-file "~/haoran/Notes/Org/Programming/public/sicp/index.xhtml"))
+
+(defun ogmc/dired-rc()
+	(interactive)
+	(dired "~/.spacemacs.d/"))

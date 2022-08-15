@@ -2,9 +2,10 @@
 (global-set-key (kbd "C-,") 'emmet-expand-line)
 
 (spacemacs/set-leader-keys "oy" 'youdao-dictionary-search-at-point+)
+(spacemacs/set-leader-keys "of" 'ogmc/indent-region-or-buffer)
 ;; open fire
-(spacemacs/set-leader-keys "rc"  '(lambda() (interactive) (dired "~/.spacemacs.d/")))
-(spacemacs/set-leader-keys "tw"  '(lambda() (interactive) (find-file "~/haoran/Notes/Org/Programming/org/wikiindex.org")))
+(spacemacs/set-leader-keys "rc"  'ogmc/dired-rc)
+(spacemacs/set-leader-keys "tw"  'ogmc/find-file-WikiIndex)
 (spacemacs/set-leader-keys "oo"  'ogmc/open-in-browser)
 (spacemacs/set-leader-keys "oi"  'ogmc/find-file-Wiki)
 (spacemacs/set-leader-keys "oni" 'ogmc/find-file-Interview)

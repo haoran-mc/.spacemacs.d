@@ -69,7 +69,8 @@ This function should only modify configuration layer settings."
      html
      (javascript :variables javascript-backend 'lsp)
      ;; latex
-     (scheme :variables scheme-implementations '(mit guile chez))
+     ;; (scheme :variables scheme-implementations '(chez mit guile))
+     ;; (scheme :variables scheme-implementations '(mit))
      ;; (git :variables
      ;;      git-magit-status-fullscreen t
      ;;      magit-push-always-verify nil
@@ -125,15 +126,38 @@ This function should only modify configuration layer settings."
                                     pyim
 																		pyim-basedict
 																		flyspell
-																		spell-checking
-                                    ;; smartparens        ;;智能括号补全
-                                    ;; smooth-scrolling   ;;更流畅的屏幕滚动
+																		spell-checking     ;;语法检查
+																		github
+																		company            ;;自动补全
+																		auto-insert
+																		auto-completion
+																		auto-complete
                                     clang-format       ;;C语言格式化
 																		sass-mode          ;;sass
 																		scss-mode          ;;scss
 																		less-css-mode      ;;less-css-mode
 																		pug-mode           ;;pug-mode
 																		haml-mode          ;;haml-mode
+																		auto-compile       ;;
+																		nodejs-repl
+																		mwim
+																		uuidgen
+																		treemacs-projectile
+																		treemacs-persp
+																		treemacs-icons-dired
+																		treemacs-evil
+																		lsp-ivy
+																		lsp-origami
+																		json-reformat
+																		json-navigator
+																		js2-refactor
+																		js-doc
+																		ivy-xref
+																		ivy-purpose
+																		ivy-hydra
+																		ivy-avy
+                                    ;; smartparens        ;;智能括号补全
+                                    ;; smooth-scrolling   ;;更流畅的屏幕滚动
                                     org-projectile
                                     org-brain
                                     magit-gh-pulls
